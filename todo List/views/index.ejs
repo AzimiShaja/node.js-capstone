@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs")  %>
+<div class="container">
+    <div class="navbar">
+        <ul>
+            <li> <a href="/">Today</a> </li>
+            <li> <a href="/work">Work</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="text">
+            <h1> <%= new Date().getFullYear() %> </h1>
+        </div>
+        <form class="box" action="/submit" method="POST">
+            <input type="text" placeholder="eg. football" name="todo" required>
+            <input type="submit" value="Add">
+        </form>
+        <div class="todolist">
+            <div class="added">
+                  <input type="checkbox" name="checkbox">
+                  <p> play football  </p>
+              </div>
+              <%  if(locals.todoList){%>
+                <% todoList.forEach((todoName) => {%>
+                    <div class="added">
+                        <input type="checkbox" name="checkbox">
+                        <p> <%= todoName %>  </p>
+                </div>
+                <% }); %>
+                <% }%>
+                  
+        </div>
+     
+    </div>
+</div>
+<%- include("partials/footer.ejs")  %>
