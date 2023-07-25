@@ -15,10 +15,11 @@ let data;
 
 app.get("/", (req, res) => {
   res.render("index.ejs", {recipe: data});
+
 });
 
 app.post("/recipe", (req, res) => {
-
+    
   switch (req.body.choice) {
     case "chicken":
       data = JSON.parse(recipeJSON)[0];
@@ -27,7 +28,7 @@ app.post("/recipe", (req, res) => {
       data = JSON.parse(recipeJSON)[1];
       break;
     case "fish":
-      data = JSON.parse(recipeJSON)[1];
+      data = JSON.parse(recipeJSON)[2];
       break;
     default:
       break;

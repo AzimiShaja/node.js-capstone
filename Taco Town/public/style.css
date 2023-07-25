@@ -1,0 +1,35 @@
+h1{
+    color: #EF6262;
+    font-size: 100px;
+}
+.container{
+    background-color: #F3AA60;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    width: 100px;
+    height: 60px;
+    font-size: 40px;
+}
+
+.ingrdients{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 400px;
+    border-radius: 10%;
+}
+.ingrdients ul {
+    list-style: none;
+
+    padding: 0;
+}
+ul li {
+    font-size: 15px;
+    color: #EF6262;
+}
