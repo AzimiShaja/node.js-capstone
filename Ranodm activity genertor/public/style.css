@@ -1,0 +1,41 @@
+*{
+    font-family: 'Trebuchet MS'
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1 {
+    font-family: 'Trebuchet MS';
+    margin-bottom: 20px;
+}
+.container select {
+    width: 200px;
+    height: 40px;
+    padding: 2px;
+}
+.container button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(7, 7, 58);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.container .details {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    background-color: rgba(133, 133, 133, 0.133);
+    padding: 20px;
+}
+.details .activity{
+    grid-column: span 2;
+    font-size: 30px;
+    font-weight: 700;
+}
